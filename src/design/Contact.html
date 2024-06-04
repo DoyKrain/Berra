@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Contact.css">
+    <script src="static/js/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <section class="breadcrumb-bg-1">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <div class="breadcrumbs">
+                        <h2 class="page-title">Contact Us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-area">
+        <div class="contact-area-all">
+            <div id="hastech2"></div>
+        </div>
+
+        <div class="slide">
+            <div class="slider">
+                <img src="../../pic/picture/41.jpg">
+                <img src="../../pic/picture/51.jpg">
+                <img src="../../pic/picture/32.jpg">
+                <img src="../../pic/picture/25.jpg">
+            </div>
+        </div>
+
+        <div class="conract-area-bottom">
+            <form id="contact-form" action="mail.php" method="post">
+                <div class="main-input">
+                    <input name="name" placeholder="Name*" type="text">
+                </div>
+                <div class="main-input mb-20 mrg-eml mrg-contact">
+                    <input name="email" placeholder="Email*" type="email">
+                </div>
+                <div class="text-leave2">
+                    <textarea class=" mb-20" name="message" placeholder="Massage"></textarea>
+                    <button class="submit" type="submit">submit</button>
+                </div>
+            </form>
+            <p class="form-messege"></p>
+        </div>
+
+        <div class="communication-all">
+            <div class="container">
+                <div class="row">
+                    <div class="text">
+                        <div class="single-communication">
+                            <div class="communication-top">
+                                <span>Phone : </span>
+                            </div>
+                            <div class="communication-bottom">
+                                <p>+012 345 678 102</p>
+                                <p>+012 345 678 102</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="single-communication">
+                            <div class="communication-top">
+                                <span>Email : </span>
+                            </div>
+                            <div class="communication-bottom">
+                                <p>DoyKrain@prontainmail.com</p>
+                                <p>urwebsitenaem.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="single-communication">
+                            <div class="communication-top">
+                                <span>Address : </span>
+                            </div>
+                            <div class="communication-bottom">
+                                <p>CQUT</p>
+                                <p>pufu street,Crossroad123</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start -->
+    <footer class="footer-style-2">
+        <div class="container">
+            <div class="footer-style-2-all text-center">
+                <div class="footer-logo2">
+                    <a href="main.html">
+                        <img src="../../pic/picture/logo.png">
+                    </a>
+                </div>
+                <div class="footer-left">
+                    <p>Copyright &copy; 2023.Company name All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <scrip type="text/javascript" src="contact.js">
+        </script>
+        <script>
+            // 获取幻灯片相关元素
+            var slide = document.querySelector('.slide');
+            var slider = slide.querySelector('.slider');
+            var slides = slider.querySelectorAll('img');
+
+            // 获取上一页/下一页按钮
+            var prevBtn = slide.querySelector('.prev');
+            var nextBtn = slide.querySelector('.next');
+
+            // 初始化幻灯片索引为0
+            var currentSlide = 0;
+
+            // 显示当前幻灯片
+            function showSlide(index) {
+                // 删除所有幻灯片的 'active' class
+                slides.forEach(function (slide) {
+                    slide.classList.remove('active');
+                });
+
+                // 添加 'active' class 到指定的幻灯片
+                slides[index].classList.add('active');
+            }
+
+            // 切换到下一张幻灯片
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            // 切换到上一张幻灯片
+            function prevSlide() {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            // 启动自动播放
+            var intervalId = setInterval(nextSlide, 3000);
+
+            // 当鼠标移入幻灯片区域时停止自动播放
+            slide.addEventListener('mouseover', function () {
+                clearInterval(intervalId);
+            });
+
+            // 当鼠标移出幻灯片区域时恢复自动播放
+            slide.addEventListener('mouseout', function () {
+                intervalId = setInterval(nextSlide, 3000);
+            });
+
+            // 添加事件监听器来手动切换幻灯片
+            prevBtn.addEventListener('click', prevSlide);
+            nextBtn.addEventListener('click', nextSlide);
+        </script>
+</body>
+
+</html>

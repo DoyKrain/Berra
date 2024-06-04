@@ -1,0 +1,136 @@
+.second {
+    border: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0;
+    right: 0;
+    left: 0;
+    padding: 100px 0;
+}
+
+
+.second_header {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pic_header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.pic_header button:hover,.pic_header button.active {
+    background-color: #383838;
+    color: #fff;
+}
+
+.pic_header button {
+    background-color: transparent;
+    border: medium none;
+    color: #5a5a5a;
+    font-size: 16px;
+    font-weight: 600;
+    height: 35px;
+    line-height: 20px;
+    padding: 0 25px;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+}
+
+.container_pic {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.pic_menu {
+    position: relative;
+    height: 1452.51px;
+}
+
+.pic1 {
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    width: 66.66666667%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pic_in {
+    display: block;
+    position: relative;
+}
+
+.pic_in > img {
+    width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.pic2 {
+    position: absolute;
+    left: 66.6667%;
+    top: 0px;
+    width: 33.33333333%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pic3 {
+    position: absolute;
+    left: 66.6667%;
+    top: 349px;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pic4 {
+    position: absolute;
+    left: 0%;
+    top: 700px;
+    width: 66.66666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pic5 {
+    position: absolute;
+    left: 66.6667%;
+    top: 698px;
+    float: left;
+    width: 33.33333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pic6 {
+    position: absolute;
+    left: 0%;
+    top: 1049px;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pic7 {
+    position: absolute;
+    left: 50%;
+    top: 1049px;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.load_more {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
