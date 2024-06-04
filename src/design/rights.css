@@ -1,0 +1,47 @@
+.rights {
+    padding: 60px 0;
+}
+
+.container_right {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.right_in {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.footer_left {
+    text-align: center;
+    float: left;
+    margin-bottom: 0;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 33.33333333%;
+}
+
+.footer_right {
+    text-align: center;
+    width: 33.33333333%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: right;
+    margin-top: 3px;
+}
+
+.footer_right>ul {
+    font-weight: 600;
+}
+
+.footer_right li {
+    float: left;
+    margin-left: 25px;
+}
